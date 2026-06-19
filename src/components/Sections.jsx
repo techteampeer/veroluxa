@@ -33,7 +33,7 @@ export function Steps() {
 
 export function PageHero({ eyebrow, title, lede, crumb }) {
   return (
-    <header className="page-hero">
+    <header className="page-hero on-dark">
       <div className="hero-grid" />
       <div className="wrap">
         <div className="page-hero-inner">
@@ -51,7 +51,7 @@ export function PageHero({ eyebrow, title, lede, crumb }) {
 
 export function CTA({ title = "Let's talk about what's next.", lede = 'Tell us about your goals and we will arrange an introductory call.' }) {
   return (
-    <section className="section cta">
+    <section className="section cta on-dark">
       <div className="hero-grid" />
       <div className="wrap cta-inner">
         <span className="eyebrow light reveal" style={{ marginBottom: '1.2rem', display: 'inline-flex' }}>Get started</span>

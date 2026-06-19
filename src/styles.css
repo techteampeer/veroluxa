@@ -89,7 +89,7 @@ h1, h2, h3 { font-family: var(--fdisp); font-weight: 600; letter-spacing: -0.02e
 .h2 { font-size: clamp(2rem, 4.4vw, 3.2rem); letter-spacing: -0.03em; line-height: 1.04; }
 .h3 { font-size: clamp(1.15rem, 1.7vw, 1.45rem); letter-spacing: -0.015em; }
 .lede { font-size: clamp(1.05rem, 1.5vw, 1.28rem); color: var(--t-mid); line-height: 1.65; font-weight: 400; }
-.on-dark .lede { color: var(--d-mid); }
+.on-dark .lede, .page-hero .lede, .cta .lede { color: var(--d-mid); }
 
 /* ---------- buttons ---------- */
 .btn {
