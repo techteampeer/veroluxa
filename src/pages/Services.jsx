@@ -7,9 +7,9 @@ export default function Services() {
     <>
       <PageHero
         crumb="Services"
-        eyebrow="What we do"
-        title={<>Consulting across <em>strategy &amp; technology.</em></>}
-        lede="From boardroom strategy to hands-on delivery, our services flex to meet you where you are — and move you to where you want to be."
+        eyebrow="Services"
+        title={<>Technology solutions built for <em>growth.</em></>}
+        lede="We help businesses transform ideas into scalable digital solutions that drive efficiency, innovation, and sustainable growth — with the expertise and guidance to move forward with confidence."
       />
 
       <section className="section">
@@ -20,7 +20,6 @@ export default function Services() {
                 <span className="ico">{ServiceIcons[s.icon]}</span>
                 <h3>{s.title}</h3>
                 <p>{s.blurb}</p>
-                {s.soon && <span className="soon">Own products — coming soon</span>}
               </div>
             ))}
           </div>
@@ -31,14 +30,17 @@ export default function Services() {
         <div className="wrap">
           <div className="s-head">
             <span className="eyebrow reveal">How we work</span>
-            <h2 className="h2 reveal" data-d="1">A clear path from question to result.</h2>
-            <p className="lede reveal" data-d="2">Every engagement follows the same disciplined, transparent path — so you always know where things stand.</p>
+            <h2 className="h2 reveal" data-d="1">A clear path from idea to impact.</h2>
+            <p className="lede reveal" data-d="2">Every engagement begins with understanding your business — then we design and deliver solutions that align with your objectives.</p>
           </div>
           <Steps />
         </div>
       </section>
 
-      <CTA title="Have a challenge in mind?" lede="Tell us where you want to get to, and we will map the path to get there." />
+      <CTA
+        title="Your long-term technology partner."
+        lede="We work alongside our clients to navigate change, embrace innovation, and build stronger digital foundations for the future."
+      />
     </>
   )
 }

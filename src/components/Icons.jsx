@@ -35,6 +35,24 @@ export const ServiceIcons = {
   people: (
     <svg width="20" height="20" viewBox="0 0 22 22" fill="none"><circle cx="7" cy="7" r="2.6" stroke="currentColor" strokeWidth="1.4" /><circle cx="15" cy="7" r="2.6" stroke="currentColor" strokeWidth="1.4" /><path d="M2.5 18c0-2.8 2-4.4 4.5-4.4S11.5 15.2 11.5 18M10.5 18c0-2.8 2-4.4 4.5-4.4s4.5 1.6 4.5 4.4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" /></svg>
   ),
+  code: (
+    <svg width="20" height="20" viewBox="0 0 22 22" fill="none"><path d="M7.5 6 3 11l4.5 5M14.5 6 19 11l-4.5 5M12.5 3.5l-3 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+  ),
+  web: (
+    <svg width="20" height="20" viewBox="0 0 22 22" fill="none"><rect x="3" y="4.5" width="16" height="13" rx="2" stroke="currentColor" strokeWidth="1.5" /><path d="M3 8.5h16" stroke="currentColor" strokeWidth="1.5" /><circle cx="5.6" cy="6.5" r=".7" fill="currentColor" /><circle cx="7.9" cy="6.5" r=".7" fill="currentColor" /></svg>
+  ),
+  mobile: (
+    <svg width="20" height="20" viewBox="0 0 22 22" fill="none"><rect x="6" y="2.5" width="10" height="17" rx="2.5" stroke="currentColor" strokeWidth="1.5" /><path d="M9.5 16.5h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
+  ),
+  mvp: (
+    <svg width="20" height="20" viewBox="0 0 22 22" fill="none"><path d="M11 2c3 1.5 5 4.8 5 9 0 1.6-.4 3-1 4H7c-.6-1-1-2.4-1-4 0-4.2 2-7.5 5-9Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /><circle cx="11" cy="9" r="2" stroke="currentColor" strokeWidth="1.5" /><path d="M7 16l-2 4 3-1M15 16l2 4-3-1" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /></svg>
+  ),
+  design: (
+    <svg width="20" height="20" viewBox="0 0 22 22" fill="none"><path d="M4 18 16 6l2 2L6 20l-3 1 1-3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /><path d="M13.5 8.5l2 2" stroke="currentColor" strokeWidth="1.5" /></svg>
+  ),
+  support: (
+    <svg width="20" height="20" viewBox="0 0 22 22" fill="none"><path d="M11 2.5 18 5v5c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V5l7-2.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" /><path d="m8 11 2 2 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+  ),
 }
 
 export const StepIcons = {

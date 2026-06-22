@@ -36,7 +36,7 @@ export default function Careers() {
           </div>
           <p className="careers-note reveal">
             Don&apos;t see your role? We&apos;re always glad to meet talented people — write to{' '}
-            <a href={`mailto:${COMPANY.emailCareers}`}>{COMPANY.emailCareers}</a>.
+            <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>.
           </p>
         </div>
       </section>
