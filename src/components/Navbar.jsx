@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import mark from '../assets/veroluxa-mark.png'
 import word from '../assets/veroluxa-word.png'
-import { LocaleLink, LocaleNavLink, useLang, LANGS } from '../i18n/locale.jsx'
+import { LocaleLink, LocaleNavLink } from '../i18n/locale.jsx'
 
 const LINKS = [
   { to: '/', key: 'home', end: true },
@@ -18,7 +18,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
-  const lang = useLang()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -28,12 +27,6 @@ export default function Navbar() {
   }, [])
 
   useEffect(() => { setOpen(false) }, [pathname])
-
-  // Swap the locale segment of the current path, keeping the same page.
-  const swapTo = (l) => {
-    const rest = pathname.replace(/^\/(en|ar)(?=\/|$)/, '')
-    return `/${l}${rest}`
-  }
 
   return (
     <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
@@ -52,14 +45,6 @@ export default function Navbar() {
       </div>
 
       <div className="nav-cta">
-        <div className="lang-switch" role="group" aria-label="Language">
-          {LANGS.map((l) => (
-            <Link key={l} to={swapTo(l)} className={l === lang ? 'active' : undefined}
-              lang={l} aria-current={l === lang ? 'true' : undefined}>
-              {l === 'ar' ? 'ع' : 'EN'}
-            </Link>
-          ))}
-        </div>
         <LocaleLink to="/contact" className="btn btn-primary nav-get">{t('nav.getInTouch')}</LocaleLink>
         <button className="nav-toggle" aria-label="Toggle menu" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
