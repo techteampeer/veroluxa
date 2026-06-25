@@ -1,19 +1,22 @@
-import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { PageHero } from '../components/Sections.jsx'
 import { Arrow } from '../components/Icons.jsx'
+import { LocaleLink } from '../i18n/locale.jsx'
 
 export default function NotFound() {
+  const { t } = useTranslation()
   return (
     <>
       <PageHero
-        crumb="Not found"
-        eyebrow="404"
-        title={<>This page <em>wandered off.</em></>}
-        lede="The page you are looking for doesn't exist or may have moved."
+        crumb={t('notFound.crumb')}
+        eyebrow={t('notFound.eyebrow')}
+        titlePre={t('notFound.titlePre')}
+        titleEm={t('notFound.titleEm')}
+        lede={t('notFound.lede')}
       />
       <section className="section">
         <div className="wrap">
-          <Link to="/" className="btn btn-primary">Back to home <Arrow /></Link>
+          <LocaleLink to="/" className="btn btn-primary">{t('common.backToHome')} <Arrow /></LocaleLink>
         </div>
       </section>
     </>

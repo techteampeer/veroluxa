@@ -1,31 +1,42 @@
 import { useEffect } from 'react'
-import { Outlet, useLocation } from 'react-router-dom'
+import { Outlet, Navigate, useLocation, useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import Navbar from './Navbar.jsx'
 import Footer from './Footer.jsx'
+import { LANGS, DEFAULT_LANG, STORAGE_KEY, isRTL } from '../i18n/locale.jsx'
 
 export default function Layout() {
+  const { lang } = useParams()
   const { pathname } = useLocation()
+  const { i18n } = useTranslation()
+  const valid = LANGS.includes(lang)
 
-  // Scroll to top on route change.
+  // Sync i18n + <html lang/dir> with the URL locale.
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' })
-  }, [pathname])
+    if (!valid) return
+    if (i18n.language !== lang) i18n.changeLanguage(lang)
+    document.documentElement.lang = lang
+    document.documentElement.dir = isRTL(lang) ? 'rtl' : 'ltr'
+    try { localStorage.setItem(STORAGE_KEY, lang) } catch { /* ignore */ }
+  }, [lang, valid, i18n])
 
-  // Reveal-on-scroll: observe any .reveal elements rendered for this route.
+  // Scroll to top on navigation.
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+
+  // Reveal-on-scroll for elements rendered on this route.
   useEffect(() => {
     const els = document.querySelectorAll('.reveal:not(.in)')
     if (!els.length) return
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
-        if (e.isIntersecting) {
-          e.target.classList.add('in')
-          io.unobserve(e.target)
-        }
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) }
       })
     }, { threshold: 0.12 })
     els.forEach((el) => io.observe(el))
     return () => io.disconnect()
   }, [pathname])
+
+  if (!valid) return <Navigate to={`/${DEFAULT_LANG}`} replace />
 
   return (
     <>

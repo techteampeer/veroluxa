@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "careers": "Careers",
+    "contact": "Contact",
+    "getInTouch": "Get in touch"
+  },
+  "common": {
+    "startConversation": "Start a conversation",
+    "exploreServices": "Explore our services",
+    "seeAllServices": "See all services",
+    "getStarted": "Get started",
+    "viewRole": "View role",
+    "backToHome": "Back to home",
+    "replyTime": "We typically reply within 2 business days.",
+    "formOk": "Thanks — your inquiry has been noted. We'll be in touch shortly.",
+    "location": "Dubai, United Arab Emirates",
+    "followUs": "LinkedIn"
+  },
+  "capabilities": [
+    "Custom Software", "Web Platforms", "Mobile Apps", "AI & Automation",
+    "UI/UX Design", "MVP & Product Strategy", "Maintenance & Support"
+  ],
+  "home": {
+    "category": "Dubai-based Technology Partner",
+    "titlePre": "Engineering",
+    "titleEm": "vision into value.",
+    "sub": "Veroluxa is a Dubai-based technology company dedicated to helping businesses grow through intelligent digital solutions, scalable systems, and strategic technology execution.",
+    "pills": ["Custom Software", "Web & Mobile", "AI & Automation"],
+    "stats": [
+      "core services across the digital lifecycle",
+      "business-first, outcome-driven delivery",
+      "a long-term partner, not just a vendor",
+      "support, optimization & peace of mind"
+    ],
+    "whatEyebrow": "What we do",
+    "whatTitle": "Technology solutions built for growth.",
+    "whatLede": "From first idea to long-term scale, we help businesses transform concepts into reliable, high-performance digital solutions.",
+    "missionEyebrow": "Our mission",
+    "missionPre": "Helping businesses grow through",
+    "missionEm": "intelligent technology.",
+    "missionBody": "Our mission is to help businesses grow through intelligent technology solutions — combining strategic thinking, technical excellence, and long-term partnerships to create scalable digital foundations for sustainable success.",
+    "howEyebrow": "How we work",
+    "howTitle": "A clear path from idea to impact.",
+    "howLede": "A business-first way of working that keeps you in control and the outcome in sight at every step."
+  },
+  "cta": {
+    "title": "Let's talk about what's next.",
+    "lede": "Tell us about your goals and we will arrange an introductory call."
+  },
+  "steps": [
+    { "title": "Discover", "body": "We start by understanding your business — its goals, challenges, and vision for growth." },
+    { "title": "Design", "body": "We shape a practical, scalable solution and a clear plan to bring it to life." },
+    { "title": "Build", "body": "We deliver with professional execution — reliable, secure, and built to perform." },
+    { "title": "Sustain", "body": "We support and optimize so your solution keeps creating value over time." }
+  ],
+  "services": {
+    "eyebrow": "Services",
+    "titlePre": "Technology solutions built for",
+    "titleEm": "growth.",
+    "lede": "We help businesses transform ideas into scalable digital solutions that drive efficiency, innovation, and sustainable growth — with the expertise and guidance to move forward with confidence.",
+    "howEyebrow": "How we work",
+    "howTitle": "A clear path from idea to impact.",
+    "howLede": "Every engagement begins with understanding your business — then we design and deliver solutions that align with your objectives.",
+    "ctaTitle": "Your long-term technology partner.",
+    "ctaLede": "We work alongside our clients to navigate change, embrace innovation, and build stronger digital foundations for the future.",
+    "general": "General enquiry",
+    "items": {
+      "software": { "title": "Custom Software Development", "blurb": "Software tailored to your processes and goals — reliable, scalable, and adaptable as your business evolves." },
+      "web": { "title": "Web Solutions & Digital Platforms", "blurb": "Corporate sites, portals, web apps, and SaaS platforms that pair performance and scalability with great user experience." },
+      "mobile": { "title": "Mobile Application Development", "blurb": "Intuitive, high-performance mobile apps built for usability, security, and long-term scalability across devices." },
+      "mvp": { "title": "Digital Product Strategy & MVP", "blurb": "From concept to launch — discovery, planning, prototyping, and MVPs that reduce risk and accelerate learning." },
+      "design": { "title": "UI/UX Design", "blurb": "User-centered design that makes products intuitive, engaging, and effortless — improving satisfaction and results." },
+      "ai": { "title": "AI & Intelligent Automation", "blurb": "Practical AI and automation that cut manual work, sharpen decisions, and unlock measurable business value." },
+      "support": { "title": "Maintenance, Support & Optimization", "blurb": "Ongoing support that keeps your solutions performant, secure, and evolving long after launch." }
+    }
+  },
+  "about": {
+    "eyebrow": "About Veroluxa",
+    "titlePre": "A technology partner built for",
+    "titleEm": "long-term growth.",
+    "lede": "Veroluxa is a Dubai-based technology company dedicated to helping businesses grow through intelligent digital solutions, scalable systems, and strategic technology execution.",
+    "storyEyebrow": "More than a service provider",
+    "storyTitle": "We measure success by the value our work keeps creating.",
+    "story": [
+      "Many businesses face the same trade-off: large agencies that bring complex processes and high overheads, or independent providers who lack the structure, accountability, and long-term commitment that business-critical work demands.",
+      "Veroluxa was established to offer a different approach — combining strategic thinking, professional execution, and a partnership-driven mindset so businesses can navigate their digital journey with confidence."
+    ],
+    "points": [
+      { "b": "Business-first, always.", "t": "Every engagement begins with understanding your goals, challenges, and vision — then we build to fit." },
+      { "b": "Strategy meets execution.", "t": "We pair strategic thinking with professional delivery and a genuine partnership mindset." },
+      { "b": "Beyond launch.", "t": "We don't measure success by project completion, but by the long-term value our solutions keep creating." }
+    ],
+    "glanceTitle": "At a glance",
+    "glance": [
+      { "k": "Legal entity", "v": "Veroluxa Digital Solutions – FZCO" },
+      { "k": "Headquarters", "v": "Dubai, UAE" },
+      { "k": "Focus", "v": "Software · Web · Mobile · AI" },
+      { "k": "Model", "v": "Long-term partnership" }
+    ],
+    "valuesLabel": "Core values",
+    "valueChips": ["Long-Term Partnership", "Excellence", "Transparency", "Scalable Thinking"],
+    "philosophyEyebrow": "Our philosophy",
+    "philosophyHeadline": "Technology should serve business objectives — not the other way around.",
+    "philosophySub": "Every engagement begins with understanding the organization behind the project — its goals, challenges, and vision. Only then do we design solutions that are practical, scalable, and built to deliver measurable impact.",
+    "standEyebrow": "What we stand for",
+    "standTitle": "The principles behind every engagement.",
+    "values": [
+      { "title": "Long-Term Partnership", "body": "We work as a trusted extension of your team, providing ongoing support, guidance, and expertise as your business evolves." },
+      { "title": "Excellence in Execution", "body": "Quality is never an afterthought. Every solution is built for reliability, performance, security, and long-term sustainability." },
+      { "title": "Transparency and Trust", "body": "Straightforward advice, realistic expectations, and complete transparency throughout every engagement." },
+      { "title": "Scalable Thinking", "body": "Today's decisions shape tomorrow's opportunities. We design for growth, adaptability, and long-term objectives." }
+    ],
+    "whyEyebrow": "Why businesses choose Veroluxa",
+    "whyTitle": "They need more than technical delivery.",
+    "whyLede": "Our clients need a partner who understands the commercial realities behind every decision — and turns technology into a catalyst for growth.",
+    "whyPoints": [
+      "A partner who understands the commercial realities behind every decision.",
+      "A partner who aligns technology with business strategy.",
+      "A partner who values quality over shortcuts.",
+      "A partner who stays committed long after a solution has launched."
+    ],
+    "visionEyebrow": "Our vision",
+    "visionHeadline": "A future where businesses are empowered by technology built with purpose.",
+    "visionSub": "As digital transformation reshapes industries, Veroluxa helps organizations embrace change, unlock new opportunities, and build the foundations for long-term success — because great technology is defined by the opportunities it creates for tomorrow.",
+    "ctaTitle": "Let's build what's next, together.",
+    "ctaLede": "Whether you have a defined brief or just a tough question, we would love to hear from you."
+  },
+  "careers": {
+    "eyebrow": "Careers",
+    "titlePre": "Build your career",
+    "titleEm": "at Veroluxa.",
+    "lede": "We are a small team that does serious work. If you like ownership, variety, and being trusted with the hard problems, you will feel at home here.",
+    "openEyebrow": "Open roles",
+    "openTitle": "Roles we are hiring for.",
+    "openLede": "A few of the positions we are currently looking to fill. Demo listings for now — real openings will appear here.",
+    "jobs": [
+      { "title": "Senior Software Engineer", "blurb": "Build scalable, reliable software at the heart of our client solutions.", "tag": "Dubai / Remote · Full-time" },
+      { "title": "Product Designer (UI/UX)", "blurb": "Craft intuitive, user-centered experiences across web and mobile.", "tag": "Remote · Full-time" },
+      { "title": "AI / Automation Engineer", "blurb": "Turn practical AI use cases into measurable business value.", "tag": "Dubai / Hybrid · Full-time" }
+    ],
+    "noteText": "Don't see your role? We're always glad to meet talented people — write to",
+    "whyEyebrow": "Why Veroluxa",
+    "whyTitle": "A place to do your best work.",
+    "perks": [
+      { "title": "Real ownership", "body": "Small team, big trust. You own outcomes, not tickets." },
+      { "title": "Room to grow", "body": "Work across software, web, mobile, and AI — and grow fast." },
+      { "title": "Flexible & remote", "body": "Remote-friendly with the flexibility to do your best work." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "titlePre": "Let's talk about",
+    "titleEm": "what's next.",
+    "lede": "Tell us a little about your goals and we will get back to you to arrange an introductory call.",
+    "emailUs": "Email us",
+    "hq": "Headquarters",
+    "legal": "Legal entity",
+    "follow": "Follow us",
+    "fName": "Name",
+    "fEmail": "Email",
+    "fCompany": "Company",
+    "fType": "How can we help?",
+    "fMessage": "Your message",
+    "phName": "Your name",
+    "phEmail": "you@company.com",
+    "phCompany": "Company name",
+    "phMessage": "A few lines about your goals or project...",
+    "submit": "Send inquiry"
+  },
+  "footer": {
+    "brand": "Engineering vision into value — a Dubai-based technology partner helping businesses grow through intelligent digital solutions.",
+    "company": "Company",
+    "services": "Services",
+    "getInTouch": "Get in touch",
+    "customSoftware": "Custom Software",
+    "webMobile": "Web & Mobile",
+    "aiAutomation": "AI & Automation",
+    "uiux": "UI/UX Design",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "crumb": "Not found",
+    "eyebrow": "404",
+    "titlePre": "This page",
+    "titleEm": "wandered off.",
+    "lede": "The page you are looking for doesn't exist or may have moved."
+  },
+  "langName": { "en": "English", "ar": "العربية" }
+}

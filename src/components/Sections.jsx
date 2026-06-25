@@ -1,14 +1,17 @@
-import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { Arrow, Chevron, StepIcons } from './Icons.jsx'
-import { CAPABILITIES, STEPS } from '../data.js'
+import { LocaleLink } from '../i18n/locale.jsx'
+import { STEP_ICONS } from '../data.js'
 
 export function Strip() {
-  const items = [...CAPABILITIES, ...CAPABILITIES]
+  const { t } = useTranslation()
+  const caps = t('capabilities', { returnObjects: true })
+  const items = [...caps, ...caps]
   return (
     <div className="strip" aria-hidden="true">
       <div className="strip-track">
-        {items.map((t, i) => (
-          <span className="strip-item" key={i}><Chevron />{t}</span>
+        {items.map((c, i) => (
+          <span className="strip-item" key={i}><Chevron />{c}</span>
         ))}
       </div>
     </div>
@@ -16,13 +19,15 @@ export function Strip() {
 }
 
 export function Steps() {
+  const { t } = useTranslation()
+  const steps = t('steps', { returnObjects: true })
   return (
     <div className="steps">
-      {STEPS.map((s, i) => (
-        <div className="step reveal" data-d={i + 1} key={s.n}>
+      {steps.map((s, i) => (
+        <div className="step reveal" data-d={i + 1} key={i}>
           <span className="bar" />
-          <span className="n">{s.n}</span>
-          <span className="ico">{StepIcons[s.icon]}</span>
+          <span className="n">{String(i + 1).padStart(2, '0')}</span>
+          <span className="ico">{StepIcons[STEP_ICONS[i]]}</span>
           <h3>{s.title}</h3>
           <p>{s.body}</p>
         </div>
@@ -31,17 +36,18 @@ export function Steps() {
   )
 }
 
-export function PageHero({ eyebrow, title, lede, crumb }) {
+export function PageHero({ eyebrow, titlePre, titleEm, lede, crumb }) {
+  const { t } = useTranslation()
   return (
     <header className="page-hero on-dark">
       <div className="hero-grid" />
       <div className="wrap">
         <div className="page-hero-inner">
           <div className="crumbs">
-            <Link to="/">Home</Link><span className="sep">/</span>{crumb}
+            <LocaleLink to="/">{t('nav.home')}</LocaleLink><span className="sep">/</span>{crumb}
           </div>
           {eyebrow && <span className="eyebrow light reveal in" style={{ marginBottom: '1.1rem', display: 'inline-flex' }}>{eyebrow}</span>}
-          <h1 className="display reveal in" data-d="1">{title}</h1>
+          <h1 className="display reveal in" data-d="1">{titlePre} <em>{titleEm}</em></h1>
           {lede && <p className="lede reveal in" data-d="2">{lede}</p>}
         </div>
       </div>
@@ -49,17 +55,18 @@ export function PageHero({ eyebrow, title, lede, crumb }) {
   )
 }
 
-export function CTA({ title = "Let's talk about what's next.", lede = 'Tell us about your goals and we will arrange an introductory call.' }) {
+export function CTA({ title, lede }) {
+  const { t } = useTranslation()
   return (
     <section className="section cta on-dark">
       <div className="hero-grid" />
       <div className="wrap cta-inner">
-        <span className="eyebrow light reveal" style={{ marginBottom: '1.2rem', display: 'inline-flex' }}>Get started</span>
-        <h2 className="h2 reveal" data-d="1">{title}</h2>
-        <p className="lede reveal" data-d="2">{lede}</p>
+        <span className="eyebrow light reveal" style={{ marginBottom: '1.2rem', display: 'inline-flex' }}>{t('common.getStarted')}</span>
+        <h2 className="h2 reveal" data-d="1">{title || t('cta.title')}</h2>
+        <p className="lede reveal" data-d="2">{lede || t('cta.lede')}</p>
         <div className="cta-actions reveal" data-d="3">
-          <Link to="/contact" className="btn btn-signal">Start a conversation <Arrow /></Link>
-          <Link to="/services" className="btn btn-ghost">Explore our services</Link>
+          <LocaleLink to="/contact" className="btn btn-signal">{t('common.startConversation')} <Arrow /></LocaleLink>
+          <LocaleLink to="/services" className="btn btn-ghost">{t('common.exploreServices')}</LocaleLink>
         </div>
       </div>
     </section>
