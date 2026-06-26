@@ -4,8 +4,9 @@ import { PageHero } from '../components/Sections.jsx'
 import { Arrow, ContactIcons } from '../components/Icons.jsx'
 import { COMPANY, SERVICES } from '../data.js'
 
-// Public Web3Forms access key — set VITE_WEB3FORMS_KEY in the Vercel env.
-const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY
+// Public Web3Forms access key (safe in client code). VITE_WEB3FORMS_KEY
+// overrides it if set in the env, so the key can be rotated without a code change.
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || '9ef46012-5782-4d02-b3dc-a6e39c791c12'
 
 export default function Contact() {
   const { t } = useTranslation()
