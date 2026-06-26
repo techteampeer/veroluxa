@@ -4,16 +4,52 @@ import { PageHero } from '../components/Sections.jsx'
 import { Arrow, ContactIcons } from '../components/Icons.jsx'
 import { COMPANY, SERVICES } from '../data.js'
 
+// Public Web3Forms access key — set VITE_WEB3FORMS_KEY in the Vercel env.
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY
+
 export default function Contact() {
   const { t } = useTranslation()
-  const [sent, setSent] = useState(false)
+  const [status, setStatus] = useState('idle') // idle | sending | ok | error
   const inquiryTypes = [...SERVICES.map((s) => t(`services.items.${s.slug}.title`)), t('services.general')]
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    // NOTE: front-end only for now — submission backend to be decided.
-    setSent(true)
-    e.target.reset()
+    const form = e.target
+    const data = new FormData(form)
+
+    // Honeypot: bots fill hidden fields — silently drop.
+    if (data.get('botcheck')) return
+
+    data.append('subject', `New website inquiry — ${data.get('type') || 'General'}`)
+    data.append('from_name', 'Veroluxa Website')
+
+    // Fallback when no key is configured yet: open the user's mail client.
+    if (!WEB3FORMS_KEY) {
+      const body = `Name: ${data.get('name')}\nEmail: ${data.get('email')}\nCompany: ${data.get('company') || '—'}\nType: ${data.get('type')}\n\n${data.get('message')}`
+      window.location.href = `mailto:${COMPANY.email}?subject=${encodeURIComponent('Website inquiry')}&body=${encodeURIComponent(body)}`
+      setStatus('ok')
+      form.reset()
+      return
+    }
+
+    data.append('access_key', WEB3FORMS_KEY)
+    setStatus('sending')
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: data,
+      })
+      const json = await res.json()
+      if (json.success) {
+        setStatus('ok')
+        form.reset()
+      } else {
+        setStatus('error')
+      }
+    } catch {
+      setStatus('error')
+    }
   }
 
   return (
@@ -49,6 +85,8 @@ export default function Contact() {
             </div>
 
             <form className="form reveal" data-d="2" onSubmit={handleSubmit}>
+              {/* honeypot (hidden from users) */}
+              <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} aria-hidden="true" />
               <div className="form-row">
                 <div className="field"><label htmlFor="f-name">{t('contact.fName')}</label><input id="f-name" name="name" type="text" placeholder={t('contact.phName')} required /></div>
                 <div className="field"><label htmlFor="f-email">{t('contact.fEmail')}</label><input id="f-email" name="email" type="email" placeholder={t('contact.phEmail')} required /></div>
@@ -63,9 +101,12 @@ export default function Contact() {
                 </div>
               </div>
               <div className="field"><label htmlFor="f-msg">{t('contact.fMessage')}</label><textarea id="f-msg" name="message" placeholder={t('contact.phMessage')} required /></div>
-              <button type="submit" className="btn btn-signal" style={{ width: '100%', justifyContent: 'center' }}>{t('contact.submit')} <Arrow /></button>
+              <button type="submit" className="btn btn-signal" style={{ width: '100%', justifyContent: 'center' }} disabled={status === 'sending'}>
+                {status === 'sending' ? t('common.sending') : <>{t('contact.submit')} <Arrow /></>}
+              </button>
               <p className="form-note">{t('common.replyTime')}</p>
-              {sent && <div className="form-ok">{t('common.formOk')}</div>}
+              {status === 'ok' && <div className="form-ok">{t('common.formOk')}</div>}
+              {status === 'error' && <div className="form-err">{t('common.formErr')}</div>}
             </form>
           </div>
         </div>

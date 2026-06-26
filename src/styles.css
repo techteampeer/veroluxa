@@ -289,6 +289,8 @@ h1, h2, h3 { font-family: var(--fdisp); font-weight: 600; letter-spacing: -0.02e
 .field textarea { resize:vertical; min-height:120px; }
 .form-note { font-size:.8rem; color:var(--t-low); margin-top:.2rem; }
 .form-ok { margin-top:1rem; padding:.9rem 1rem; border-radius:var(--r-sm); background:color-mix(in srgb, var(--signal) 14%, var(--white)); border:1px solid color-mix(in srgb, var(--signal) 35%, transparent); color:var(--signal-d); font-size:.9rem; }
+.form-err { margin-top:1rem; padding:.9rem 1rem; border-radius:var(--r-sm); background:#fdecea; border:1px solid #f3c0bb; color:#b3261e; font-size:.9rem; }
+.btn:disabled { opacity:.7; cursor:progress; transform:none; }
 
 /* ============================================================ VALUES */
 .values-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:3.2rem; }
