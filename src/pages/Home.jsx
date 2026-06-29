@@ -7,7 +7,6 @@ import { SERVICES, STATS } from '../data.js'
 
 export default function Home() {
   const { t } = useTranslation()
-  const pills = t('home.pills', { returnObjects: true })
   const stats = t('home.stats', { returnObjects: true })
   const preview = SERVICES.slice(0, 3)
 
@@ -24,9 +23,6 @@ export default function Home() {
             <div className="hero-actions reveal in" data-d="3">
               <LocaleLink to="/contact" className="btn btn-signal">{t('common.startConversation')} <Arrow /></LocaleLink>
               <LocaleLink to="/services" className="btn btn-ghost">{t('common.exploreServices')}</LocaleLink>
-            </div>
-            <div className="hero-pills reveal in" data-d="3">
-              {pills.map((p, i) => <span className="hero-pill" key={i}>{p}</span>)}
             </div>
           </div>
           <div className="hero-rail">
