@@ -1,10 +1,12 @@
 import { useTranslation } from 'react-i18next'
 import { PageHero, Steps, CTA } from '../components/Sections.jsx'
 import { ServiceIcons } from '../components/Icons.jsx'
+import { useSeo } from '../seo/useSeo.js'
 import { SERVICES } from '../data.js'
 
 export default function Services() {
   const { t } = useTranslation()
+  useSeo({ title: t('services.seo.title'), description: t('services.seo.description') })
   return (
     <>
       <PageHero

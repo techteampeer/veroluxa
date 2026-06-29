@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PageHero } from '../components/Sections.jsx'
 import { Arrow, ContactIcons } from '../components/Icons.jsx'
+import { useSeo } from '../seo/useSeo.js'
 import { COMPANY, SERVICES } from '../data.js'
 
 // Public Web3Forms access key (safe in client code). VITE_WEB3FORMS_KEY
@@ -10,6 +11,7 @@ const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || '9ef46012-5782-4d02-
 
 export default function Contact() {
   const { t } = useTranslation()
+  useSeo({ title: t('contact.seo.title'), description: t('contact.seo.description') })
   const [status, setStatus] = useState('idle') // idle | sending | ok | error
   const inquiryTypes = [...SERVICES.map((s) => t(`services.items.${s.slug}.title`)), t('services.general')]
 

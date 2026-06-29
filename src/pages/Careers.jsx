@@ -2,10 +2,12 @@ import { useTranslation } from 'react-i18next'
 import { PageHero } from '../components/Sections.jsx'
 import { Arrow, PerkIcons } from '../components/Icons.jsx'
 import { LocaleLink } from '../i18n/locale.jsx'
+import { useSeo } from '../seo/useSeo.js'
 import { PERK_ICONS, COMPANY } from '../data.js'
 
 export default function Careers() {
   const { t } = useTranslation()
+  useSeo({ title: t('careers.seo.title'), description: t('careers.seo.description') })
   const jobs = t('careers.jobs', { returnObjects: true })
   const perks = t('careers.perks', { returnObjects: true })
 

@@ -3,10 +3,12 @@ import mark from '../assets/veroluxa-mark.png'
 import { Arrow, ServiceIcons } from '../components/Icons.jsx'
 import { Strip, Steps, CTA } from '../components/Sections.jsx'
 import { LocaleLink } from '../i18n/locale.jsx'
+import { useSeo } from '../seo/useSeo.js'
 import { SERVICES, STATS } from '../data.js'
 
 export default function Home() {
   const { t } = useTranslation()
+  useSeo({ title: t('home.seo.title'), description: t('home.seo.description') })
   const stats = t('home.stats', { returnObjects: true })
   const preview = SERVICES.slice(0, 3)
 
@@ -38,7 +40,18 @@ export default function Home() {
 
       <Strip />
 
+      {/* WHO WE ARE — intro copy for readers & crawlers */}
       <section className="section">
+        <div className="wrap" style={{ maxWidth: '840px' }}>
+          <span className="eyebrow reveal">{t('home.whoEyebrow')}</span>
+          <h2 className="h2 reveal" data-d="1" style={{ margin: '1.1rem 0 1.2rem' }}>{t('home.whoTitle')}</h2>
+          <p className="lede reveal" data-d="2" style={{ marginBottom: '1rem' }}>{t('home.whoP1')}</p>
+          <p className="lede reveal" data-d="2" style={{ marginBottom: '1.6rem' }}>{t('home.whoP2')}</p>
+          <LocaleLink to="/about" className="btn btn-ghost reveal" data-d="3">{t('home.whoMore')} <Arrow /></LocaleLink>
+        </div>
+      </section>
+
+      <section className="section safety">
         <div className="wrap">
           <div className="s-head">
             <span className="eyebrow reveal">{t('home.whatEyebrow')}</span>

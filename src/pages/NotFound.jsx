@@ -2,9 +2,11 @@ import { useTranslation } from 'react-i18next'
 import { PageHero } from '../components/Sections.jsx'
 import { Arrow } from '../components/Icons.jsx'
 import { LocaleLink } from '../i18n/locale.jsx'
+import { useSeo } from '../seo/useSeo.js'
 
 export default function NotFound() {
   const { t } = useTranslation()
+  useSeo({ title: t('notFound.seo.title'), description: t('notFound.seo.description') })
   return (
     <>
       <PageHero

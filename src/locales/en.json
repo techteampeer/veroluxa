@@ -46,7 +46,16 @@
     "missionBody": "Our mission is to help businesses grow through intelligent technology solutions — combining strategic thinking, technical excellence, and long-term partnerships to create scalable digital foundations for sustainable success.",
     "howEyebrow": "How we work",
     "howTitle": "A clear path from idea to impact.",
-    "howLede": "A business-first way of working that keeps you in control and the outcome in sight at every step."
+    "howLede": "A business-first way of working that keeps you in control and the outcome in sight at every step.",
+    "whoEyebrow": "Who we are",
+    "whoTitle": "A Dubai-based technology partner.",
+    "whoP1": "Veroluxa is a technology company based in Dubai, helping startups, growing companies, and established organizations turn ideas into reliable, scalable digital products.",
+    "whoP2": "From custom software and web and mobile applications to data, AI, and automation, we combine clear strategy with hands-on engineering to deliver technology that creates lasting business value.",
+    "whoMore": "More about Veroluxa",
+    "seo": {
+      "title": "Veroluxa — Dubai Technology Company | Software, Web & AI",
+      "description": "Veroluxa is a Dubai-based technology company building custom software, web, mobile and AI solutions that help businesses grow."
+    }
   },
   "cta": {
     "title": "Let's talk about what's next.",
@@ -69,6 +78,10 @@
     "ctaTitle": "Your long-term technology partner.",
     "ctaLede": "We work alongside our clients to navigate change, embrace innovation, and build stronger digital foundations for the future.",
     "general": "General enquiry",
+    "seo": {
+      "title": "Services — Veroluxa | Software, Web, Mobile & AI",
+      "description": "Custom software, web & mobile apps, UI/UX, AI & automation, and ongoing support — technology services that help your business grow."
+    },
     "items": {
       "software": { "title": "Custom Software Development", "blurb": "Software tailored to your processes and goals — reliable, scalable, and adaptable as your business evolves." },
       "web": { "title": "Web Solutions & Digital Platforms", "blurb": "Corporate sites, portals, web apps, and SaaS platforms that pair performance and scalability with great user experience." },
@@ -128,13 +141,21 @@
     "visionHeadline": "A future where businesses are empowered by technology built with purpose.",
     "visionSub": "As digital transformation reshapes industries, Veroluxa helps organizations embrace change, unlock new opportunities, and build the foundations for long-term success — because great technology is defined by the opportunities it creates for tomorrow.",
     "ctaTitle": "Let's build what's next, together.",
-    "ctaLede": "Whether you have a defined brief or just a tough question, we would love to hear from you."
+    "ctaLede": "Whether you have a defined brief or just a tough question, we would love to hear from you.",
+    "seo": {
+      "title": "About Veroluxa — Dubai Technology Partner",
+      "description": "Veroluxa is a Dubai-based technology company helping businesses grow through strategy, engineering, and long-term partnership."
+    }
   },
   "careers": {
     "eyebrow": "Careers",
     "titlePre": "Build your career",
     "titleEm": "at Veroluxa.",
     "lede": "We are a small team that does serious work. If you like ownership, variety, and being trusted with the hard problems, you will feel at home here.",
+    "seo": {
+      "title": "Careers — Veroluxa | Dubai Technology Company",
+      "description": "Join Veroluxa, a Dubai-based technology company. Explore roles across software, design, and AI, and build digital products that last."
+    },
     "openEyebrow": "Open roles",
     "openTitle": "Roles we are hiring for.",
     "openLede": "A few of the positions we are currently looking to fill. Demo listings for now — real openings will appear here.",
@@ -170,7 +191,11 @@
     "phEmail": "you@company.com",
     "phCompany": "Company name",
     "phMessage": "A few lines about your goals or project...",
-    "submit": "Send inquiry"
+    "submit": "Send inquiry",
+    "seo": {
+      "title": "Contact Veroluxa — Let's Build What's Next",
+      "description": "Get in touch with Veroluxa, a Dubai-based technology company. Tell us about your goals and we'll arrange an introductory call."
+    }
   },
   "footer": {
     "brand": "Engineering vision into value — a Dubai-based technology partner helping businesses grow through intelligent digital solutions.",
@@ -188,7 +213,11 @@
     "eyebrow": "404",
     "titlePre": "This page",
     "titleEm": "wandered off.",
-    "lede": "The page you are looking for doesn't exist or may have moved."
+    "lede": "The page you are looking for doesn't exist or may have moved.",
+    "seo": {
+      "title": "Page not found — Veroluxa",
+      "description": "The page you are looking for doesn't exist or may have moved."
+    }
   },
   "langName": { "en": "English", "ar": "العربية" }
 }
