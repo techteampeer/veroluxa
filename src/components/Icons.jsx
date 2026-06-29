@@ -1,5 +1,5 @@
 import {
-  Code, AppWindow, Smartphone, Compass, PenTool, Sparkles, Wrench,
+  MonitorCog, AppWindow, Smartphone, Compass, PenTool, Sparkles, Wrench,
   Search, PencilRuler, Blocks, RefreshCw,
   BadgeCheck, TrendingUp, Laptop,
   Mail, MapPin, Building2, Link2,
@@ -27,7 +27,7 @@ export function Chevron({ size = 13 }) {
 
 // Service icons — recognizable metaphors, one per offering
 export const ServiceIcons = {
-  code: <Code size={22} strokeWidth={SW} />,            // Custom Software
+  code: <MonitorCog size={22} strokeWidth={SW} />,      // Custom Software
   web: <AppWindow size={22} strokeWidth={SW} />,         // Web Solutions & Platforms
   mobile: <Smartphone size={22} strokeWidth={SW} />,     // Mobile Apps
   mvp: <Compass size={22} strokeWidth={SW} />,           // Product Strategy & MVP
