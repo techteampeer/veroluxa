@@ -37,7 +37,7 @@ export const ServiceIcons = {
 }
 
 // Process steps — distinct from the service set
-const STEP = 48 // prominent, matching the previous step-icon size on Home
+const STEP = 120 // prominent step icons, matching the original large render on Home
 export const StepIcons = {
   discover: <Search size={STEP} strokeWidth={1.5} />,
   design: <PencilRuler size={STEP} strokeWidth={1.5} />,  // blueprint/planning (≠ UI/UX PenTool)
