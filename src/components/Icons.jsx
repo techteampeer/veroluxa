@@ -1,5 +1,5 @@
 import {
-  Code, AppWindow, Smartphone, Rocket, PenTool, Sparkles, Wrench,
+  Code, AppWindow, Smartphone, Compass, PenTool, Sparkles, Wrench,
   Search, PencilRuler, Blocks, RefreshCw,
   BadgeCheck, TrendingUp, Laptop,
   Mail, MapPin, Building2, Link2,
@@ -30,18 +30,19 @@ export const ServiceIcons = {
   code: <Code size={22} strokeWidth={SW} />,            // Custom Software
   web: <AppWindow size={22} strokeWidth={SW} />,         // Web Solutions & Platforms
   mobile: <Smartphone size={22} strokeWidth={SW} />,     // Mobile Apps
-  mvp: <Rocket size={22} strokeWidth={SW} />,            // Product Strategy & MVP
+  mvp: <Compass size={22} strokeWidth={SW} />,           // Product Strategy & MVP
   design: <PenTool size={22} strokeWidth={SW} />,        // UI/UX Design
   ai: <Sparkles size={22} strokeWidth={SW} />,           // AI & Automation
   support: <Wrench size={22} strokeWidth={SW} />,        // Maintenance & Support
 }
 
 // Process steps — distinct from the service set
+const STEP = 48 // prominent, matching the previous step-icon size on Home
 export const StepIcons = {
-  discover: <Search size={28} strokeWidth={SW} />,
-  design: <PencilRuler size={28} strokeWidth={SW} />,    // blueprint/planning (≠ UI/UX PenTool)
-  deliver: <Blocks size={28} strokeWidth={SW} />,        // build
-  sustain: <RefreshCw size={28} strokeWidth={SW} />,
+  discover: <Search size={STEP} strokeWidth={1.5} />,
+  design: <PencilRuler size={STEP} strokeWidth={1.5} />,  // blueprint/planning (≠ UI/UX PenTool)
+  deliver: <Blocks size={STEP} strokeWidth={1.5} />,      // build
+  sustain: <RefreshCw size={STEP} strokeWidth={1.5} />,
 }
 
 export const PerkIcons = {
