@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://veroluxa.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veroluxa.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://veroluxa.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veroluxa.com/en"/>
+  </url>
+  <url>
+    <loc>https://veroluxa.com/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veroluxa.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://veroluxa.com/ar/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veroluxa.com/en/services"/>
+  </url>
+  <url>
+    <loc>https://veroluxa.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veroluxa.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://veroluxa.com/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veroluxa.com/en/about"/>
+  </url>
+  <url>
+    <loc>https://veroluxa.com/en/careers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veroluxa.com/en/careers"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://veroluxa.com/ar/careers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veroluxa.com/en/careers"/>
+  </url>
+  <url>
+    <loc>https://veroluxa.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veroluxa.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://veroluxa.com/ar/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veroluxa.com/en/contact"/>
+  </url>
+  <url>
+    <loc>https://veroluxa.com/ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veroluxa.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://veroluxa.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veroluxa.com/en"/>
+  </url>
+  <url>
+    <loc>https://veroluxa.com/ar/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veroluxa.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://veroluxa.com/ar/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veroluxa.com/en/services"/>
+  </url>
+  <url>
+    <loc>https://veroluxa.com/ar/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veroluxa.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://veroluxa.com/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veroluxa.com/en/about"/>
+  </url>
+  <url>
+    <loc>https://veroluxa.com/ar/careers</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veroluxa.com/en/careers"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://veroluxa.com/ar/careers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veroluxa.com/en/careers"/>
+  </url>
+  <url>
+    <loc>https://veroluxa.com/ar/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veroluxa.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://veroluxa.com/ar/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veroluxa.com/en/contact"/>
+  </url>
+</urlset>
