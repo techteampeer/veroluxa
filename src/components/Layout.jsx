@@ -11,6 +11,12 @@ export default function Layout() {
   const { i18n } = useTranslation()
   const valid = LANGS.includes(lang)
 
+  // During SSG (no window) set the language synchronously so the page
+  // pre-renders in the correct locale; the client uses the effect below.
+  if (valid && typeof window === 'undefined' && i18n.language !== lang) {
+    i18n.changeLanguage(lang)
+  }
+
   // Sync i18n + <html lang/dir> with the URL locale.
   useEffect(() => {
     if (!valid) return

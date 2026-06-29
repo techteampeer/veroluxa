@@ -1,4 +1,3 @@
-import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout.jsx'
 import RootRedirect from './components/RootRedirect.jsx'
 import Home from './pages/Home.jsx'
@@ -8,19 +7,20 @@ import Careers from './pages/Careers.jsx'
 import Contact from './pages/Contact.jsx'
 import NotFound from './pages/NotFound.jsx'
 
-export default function App() {
-  return (
-    <Routes>
-      <Route path=":lang" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="services" element={<Services />} />
-        <Route path="about" element={<About />} />
-        <Route path="careers" element={<Careers />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
-      </Route>
-      <Route path="/" element={<RootRedirect />} />
-      <Route path="*" element={<RootRedirect />} />
-    </Routes>
-  )
-}
+// Route table (react-router data-router format) consumed by ViteReactSSG.
+export const routes = [
+  { path: '/', element: <RootRedirect /> },
+  {
+    path: ':lang',
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'services', element: <Services /> },
+      { path: 'about', element: <About /> },
+      { path: 'careers', element: <Careers /> },
+      { path: 'contact', element: <Contact /> },
+      { path: '*', element: <NotFound /> },
+    ],
+  },
+  { path: '*', element: <RootRedirect /> },
+]

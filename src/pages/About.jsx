@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { PageHero, CTA } from '../components/Sections.jsx'
-import { useSeo } from '../seo/useSeo.js'
+import Seo from '../seo/Seo.jsx'
 
 const checkIcon = (
   <svg width="17" height="17" viewBox="0 0 18 18" fill="none"><path d="M2.5 9.5 7 14l8.5-9.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
@@ -8,7 +8,6 @@ const checkIcon = (
 
 export default function About() {
   const { t } = useTranslation()
-  useSeo({ title: t('about.seo.title'), description: t('about.seo.description') })
   const story = t('about.story', { returnObjects: true })
   const points = t('about.points', { returnObjects: true })
   const glance = t('about.glance', { returnObjects: true })
@@ -18,6 +17,7 @@ export default function About() {
 
   return (
     <>
+      <Seo title={t('about.seo.title')} description={t('about.seo.description')} />
       <PageHero
         crumb={t('nav.about')}
         eyebrow={t('about.eyebrow')}

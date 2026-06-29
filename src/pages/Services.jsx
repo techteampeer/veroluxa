@@ -1,14 +1,14 @@
 import { useTranslation } from 'react-i18next'
 import { PageHero, Steps, CTA } from '../components/Sections.jsx'
 import { ServiceIcons } from '../components/Icons.jsx'
-import { useSeo } from '../seo/useSeo.js'
+import Seo from '../seo/Seo.jsx'
 import { SERVICES } from '../data.js'
 
 export default function Services() {
   const { t } = useTranslation()
-  useSeo({ title: t('services.seo.title'), description: t('services.seo.description') })
   return (
     <>
+      <Seo title={t('services.seo.title')} description={t('services.seo.description')} />
       <PageHero
         crumb={t('services.eyebrow')}
         eyebrow={t('services.eyebrow')}

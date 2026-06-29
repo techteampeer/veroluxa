@@ -3,17 +3,17 @@ import mark from '../assets/veroluxa-mark.png'
 import { Arrow, ServiceIcons } from '../components/Icons.jsx'
 import { Strip, Steps, CTA } from '../components/Sections.jsx'
 import { LocaleLink } from '../i18n/locale.jsx'
-import { useSeo } from '../seo/useSeo.js'
+import Seo from '../seo/Seo.jsx'
 import { SERVICES, STATS } from '../data.js'
 
 export default function Home() {
   const { t } = useTranslation()
-  useSeo({ title: t('home.seo.title'), description: t('home.seo.description') })
   const stats = t('home.stats', { returnObjects: true })
   const preview = SERVICES.slice(0, 3)
 
   return (
     <>
+      <Seo title={t('home.seo.title')} description={t('home.seo.description')} />
       <header className="hero on-dark">
         <div className="hero-grid" />
         <img className="hero-chev" src={mark} alt="" aria-hidden="true" />
