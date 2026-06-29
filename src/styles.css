@@ -351,9 +351,8 @@ html[dir="rtl"] {
 [dir="rtl"] .btn:hover .arr { transform: scaleX(-1) translateX(3px); }
 [dir="rtl"] .job:hover .arr-link svg { transform: scaleX(-1) translateX(3px); }
 
-/* hero chevron mirrors to the start side */
-[dir="rtl"] .hero-chev { right:auto; left:-3%; animation-name: chevFloatRTL; }
-@keyframes chevFloatRTL { 0%,100% { transform: translateY(-50%) scaleX(-1); } 50% { transform: translateY(-52%) translateX(8px) scaleX(-1); } }
+/* hero chevron moves to the start side in RTL, but is NOT mirrored — keep the logo orientation */
+[dir="rtl"] .hero-chev { right:auto; left:-3%; }
 
 /* dividers + padding mirror for stat rail and steps */
 [dir="rtl"] .hero-rail .stat { padding: 1.6rem 0 0 1.6rem; border-right:none; border-left:1px solid var(--d-line); }
