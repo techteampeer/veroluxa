@@ -79,10 +79,6 @@ export default function Contact() {
                 <span className="ci-ico">{ContactIcons.user}</span>
                 <div><div className="lab">{t('contact.legal')}</div><div className="val">{COMPANY.legalName}</div></div>
               </div>
-              <div className="ci-row">
-                <span className="ci-ico">{ContactIcons.link}</span>
-                <div><div className="lab">{t('contact.follow')}</div><div className="val"><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">{t('common.followUs')}</a></div></div>
-              </div>
             </div>
 
             <form className="form reveal" data-d="2" onSubmit={handleSubmit}>

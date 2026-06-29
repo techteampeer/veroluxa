@@ -31,7 +31,6 @@ export default function Footer() {
           <div className="foot-col">
             <h4>{t('footer.getInTouch')}</h4>
             <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">{t('common.followUs')}</a>
             <span className="muted">{t('common.location')}</span>
           </div>
         </div>
