@@ -21,8 +21,8 @@ export default function Home() {
             <h1 className="display reveal in" data-d="1">{t('home.titlePre')} <em>{t('home.titleEm')}</em></h1>
             <p className="hero-sub reveal in" data-d="2">{t('home.sub')}</p>
             <div className="hero-actions reveal in" data-d="3">
-              <LocaleLink to="/contact" className="btn btn-signal">{t('common.startConversation')} <Arrow /></LocaleLink>
-              <LocaleLink to="/services" className="btn btn-ghost">{t('common.exploreServices')}</LocaleLink>
+              <LocaleLink to="/contact" className="btn btn-signal btn-lg">{t('common.startConversation')} <Arrow /></LocaleLink>
+              <LocaleLink to="/services" className="btn btn-ghost btn-lg">{t('common.exploreServices')}</LocaleLink>
             </div>
           </div>
           <div className="hero-rail">
